@@ -13,6 +13,10 @@
   font-size: 5vw;
 }
 
+.App-text-header > span {
+  font-size: 3vw;
+}
+
 .App-text-content {
   font-size: 3vw;
   margin-top: 20px;
@@ -33,7 +37,48 @@
   justify-content: between;
 }
 
+.fade {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 1s;
+}
+
+.delay-2 {
+  animation-delay: 1.5s;
+}
+
+.delay-3 {
+  animation-delay: 2s;
+}
+
+.delay-4 {
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px); /* Start offscreen to the left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Move to original position */
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .App-text-header {
+    font-size: 7vw;
+  }
+
+  .App-text-content {
+    font-size: 4vw;
+    margin-top: 20px;
+  }
+
   .icon-container {
     flex-wrap: wrap;
     height: 50vh;
@@ -41,7 +86,7 @@
 
   .App-icon {
     width: 50%;
-    font-size: 25vw;
+    font-size: 30vw;
     margin-top: 0px;
     margin-right: 0px;
   }
