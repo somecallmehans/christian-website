@@ -7,6 +7,34 @@ const IconWithLink = ({ url, icon }) => (
   </a>
 );
 
+const IconCredit = () => (
+  <div
+    style={{
+      position: "absolute",
+      bottom: "0",
+      left: "0",
+      fontSize: "10px",
+      color: "inherit",
+    }}
+  >
+    <a
+      target="_blank"
+      style={{ textDecoration: "none", color: "inherit" }}
+      href="https://icons8.com/icon/12860/coffee-to-go"
+    >
+      Coffee
+    </a>{" "}
+    icon by{" "}
+    <a
+      target="_blank"
+      style={{ textDecoration: "none", color: "inherit" }}
+      href="https://icons8.com"
+    >
+      Icons8
+    </a>
+  </div>
+);
+
 function App() {
   return (
     <div className="App">
@@ -25,6 +53,7 @@ function App() {
           <IconWithLink url={SPOTIFY} icon="fa-brands fa-spotify" />
           <IconWithLink url={EMAIL} icon="fa-solid fa-square-envelope" />
         </div>
+        <IconCredit />
       </div>
     </div>
   );
