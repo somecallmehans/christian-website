@@ -44,7 +44,7 @@ function App() {
           My name is Christian <span>(He/Him)</span>.
         </div>
         <div className="App-text-content fade delay-2">
-          I'm a full stack developer, musician, and general handy person.
+          I'm a full stack developer, musician, and general outdoorsy person.
         </div>
         <div className="App-text-content fade delay-3">This is my website.</div>
         <div className="icon-container fade delay-4">
