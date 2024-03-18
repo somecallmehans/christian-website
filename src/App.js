@@ -4,12 +4,12 @@ function App() {
   return (
     <div className="App">
       <div>
-        <div className="App-text-header">Hi. </div>
+        <div className="App-text-header">Hey! </div>
         <div className="App-text-header">
           My name is Christian Anderson (He/Him).
         </div>
         <div className="App-text-content">
-          I'm a full stack developer, a musician, and general handy person.
+          I'm a full stack developer, musician, and general handy person.
         </div>
         <div className="App-text-content">This is my website.</div>
         <div className="icon-container ">
