@@ -1,10 +1,47 @@
 .App {
   height: 100vh;
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center;
 }
 
 .App > div {
-  width: 100%;
-  position: fixed;
-  top: 20%;
-  font-size: 6vw;
+  padding: 15px;
+}
+
+.App-text-header {
+  font-size: 5vw;
+}
+
+.App-text-content {
+  font-size: 3vw;
+}
+
+.App-icon {
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.icon-container {
+  display: flex;
+  flex-grow: grow;
+  justify-content: between;
+}
+
+@media screen and (max-width: 600px) {
+  .icon-container {
+    flex-wrap: wrap;
+    height: 50vh;
+  }
+
+  .App-icon {
+    width: 50%;
+    font-size: 25vw;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
 }
