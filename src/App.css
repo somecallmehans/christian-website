@@ -1,7 +1,7 @@
 .App {
   height: 100vh;
   display: flex;
-  justify-content: center; /* Horizontally center content */
+  justify-content: center;
   align-items: center;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .App-text-header > span {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .App-text-content {
@@ -23,12 +23,14 @@
 }
 
 .App-icon {
-  font-size: 3vw;
+  font-size: 4vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
-  margin-right: 15px;
+  margin-top: 25px;
+  margin-right: 25px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .icon-container {
@@ -61,17 +63,21 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateX(-30px); /* Start offscreen to the left */
+    transform: translateX(-30px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0); /* Move to original position */
+    transform: translateX(0);
   }
 }
 
 @media screen and (max-width: 600px) {
   .App-text-header {
     font-size: 7vw;
+  }
+
+  .App-text-header > span {
+    font-size: 4vw;
   }
 
   .App-text-content {

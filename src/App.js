@@ -1,4 +1,11 @@
 import "./App.css";
+import { SPOTIFY, GITHUB, LINKEDIN, EMAIL } from "./constants";
+
+const IconWithLink = ({ url, icon }) => (
+  <a href={url} className="App-icon fade-in">
+    <i className={icon} />
+  </a>
+);
 
 function App() {
   return (
@@ -13,10 +20,10 @@ function App() {
         </div>
         <div className="App-text-content fade delay-3">This is my website.</div>
         <div className="icon-container fade delay-4">
-          <i className="fa-brands fa-linkedin App-icon fade-in" />
-          <i className="fa-brands fa-square-github App-icon" />
-          <i className="fa-brands fa-spotify App-icon" />
-          <i className="fa-solid fa-square-envelope App-icon" />
+          <IconWithLink url={LINKEDIN} icon="fa-brands fa-linkedin" />
+          <IconWithLink url={GITHUB} icon="fa-brands fa-square-github" />
+          <IconWithLink url={SPOTIFY} icon="fa-brands fa-spotify" />
+          <IconWithLink url={EMAIL} icon="fa-solid fa-square-envelope" />
         </div>
       </div>
     </div>
