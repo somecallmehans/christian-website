@@ -36,6 +36,22 @@
   text-decoration: none;
 }
 
+.App-icon.linkedin:hover {
+  color: #9d49be;
+}
+
+.App-icon.github:hover {
+  color: #0784ca;
+}
+
+.App-icon.spotify:hover {
+  color: #137724;
+}
+
+.App-icon.email:hover {
+  color: #b41e02;
+}
+
 .icon-container {
   display: flex;
   flex-grow: grow;
@@ -61,6 +77,23 @@
 
 .delay-4 {
   animation-delay: 2.5s;
+}
+
+// icon delays
+.delay-5 {
+  animation-delay: 2.5s;
+}
+
+.delay-6 {
+  animation-delay: 2.75s;
+}
+
+.delay-7 {
+  animation-delay: 3s;
+}
+
+.delay-8 {
+  animation-delay: 3.25s;
 }
 
 @keyframes fadeIn {

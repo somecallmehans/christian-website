@@ -2,8 +2,8 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { SPOTIFY, GITHUB, LINKEDIN, EMAIL } from "./constants";
 
-const IconWithLink = ({ url, icon }) => (
-  <a href={url} className="App-icon fade-in">
+const IconWithLink = ({ url, icon, type }) => (
+  <a href={url} className={`App-icon ${type}`}>
     <i className={icon} />
   </a>
 );
@@ -62,13 +62,29 @@ function App() {
           I'm a full stack developer, musician, and general outdoorsy person
         </div>
         <div className={`App-text-content ${animate}-3`}>
-          This is my website
+          Welcome to my home page
         </div>
         <div className={`icon-container ${animate}-4`}>
-          <IconWithLink url={LINKEDIN} icon="fa-brands fa-linkedin" />
-          <IconWithLink url={GITHUB} icon="fa-brands fa-square-github" />
-          <IconWithLink url={SPOTIFY} icon="fa-brands fa-spotify" />
-          <IconWithLink url={EMAIL} icon="fa-solid fa-square-envelope" />
+          <IconWithLink
+            url={LINKEDIN}
+            icon="fa-brands fa-linkedin"
+            type={`linkedin ${animate}-5`}
+          />
+          <IconWithLink
+            url={GITHUB}
+            icon="fa-brands fa-square-github"
+            type={`github ${animate}-6`}
+          />
+          <IconWithLink
+            url={SPOTIFY}
+            icon="fa-brands fa-spotify"
+            type={`spotify ${animate}-7`}
+          />
+          <IconWithLink
+            url={EMAIL}
+            icon="fa-solid fa-square-envelope"
+            type={`email ${animate}-8`}
+          />
         </div>
         <IconCredit />
       </div>
