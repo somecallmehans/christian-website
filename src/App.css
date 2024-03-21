@@ -8,10 +8,6 @@
   font-family: "Cabin", sans-serif;
 }
 
-.home {
-  padding: 15px;
-}
-
 .home-text-header {
   font-size: 5vw;
 }
@@ -22,7 +18,6 @@
 
 .home-text-content {
   font-size: 3vw;
-  margin-top: 20px;
 }
 
 .home-icon {

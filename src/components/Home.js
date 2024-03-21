@@ -17,15 +17,15 @@ export default function Home() {
   }
 
   return (
-    <div className="home">
+    <div className="p-3">
       <div className={`home-text-header ${animate}`}>Hey! </div>
       <div className={`home-text-header ${animate}-1`}>
         My name is Christo <span>(He/Him)</span>
       </div>
-      <div className={`home-text-content ${animate}-2`}>
+      <div className={`home-text-content mt-3 ${animate}-2`}>
         I'm a full stack developer, musician, and general outdoorsy person
       </div>
-      <div className={`home-text-content ${animate}-3`}>
+      <div className={`home-text-content mt-3 ${animate}-3`}>
         Welcome to my home page
       </div>
       <IconSocials animate={animate} />
