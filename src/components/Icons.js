@@ -2,7 +2,7 @@ import React from "react";
 import { SPOTIFY, GITHUB, LINKEDIN, EMAIL } from "../constants";
 
 export const IconWithLink = ({ url, icon, type }) => (
-  <a href={url} className={`App-icon ${type}`}>
+  <a href={url} className={`home-icon ${type}`}>
     <i className={icon} />
   </a>
 );

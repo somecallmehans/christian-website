@@ -12,20 +12,20 @@
   padding: 15px;
 }
 
-.App-text-header {
+.home-text-header {
   font-size: 5vw;
 }
 
-.App-text-header > span {
+.home-text-header > span {
   font-size: 2vw;
 }
 
-.App-text-content {
+.home-text-content {
   font-size: 3vw;
   margin-top: 20px;
 }
 
-.App-icon {
+.home-icon {
   font-size: 4vw;
   display: flex;
   align-items: center;
@@ -36,19 +36,19 @@
   text-decoration: none;
 }
 
-.App-icon.linkedin:hover {
-  color: #9d49be;
-}
-
-.App-icon.github:hover {
+.home-icon.linkedin:hover {
   color: #0784ca;
 }
 
-.App-icon.spotify:hover {
+.home-icon.github:hover {
+  color: #9d49be;
+}
+
+.home-icon.spotify:hover {
   color: #137724;
 }
 
-.App-icon.email:hover {
+.home-icon.email:hover {
   color: #b41e02;
 }
 
@@ -108,15 +108,15 @@
 }
 
 @media screen and (max-width: 600px) {
-  .App-text-header {
+  .home-text-header {
     font-size: 7vw;
   }
 
-  .App-text-header > span {
+  .home-text-header > span {
     font-size: 4vw;
   }
 
-  .App-text-content {
+  .home-text-content {
     font-size: 4vw;
     margin-top: 20px;
   }
@@ -126,7 +126,7 @@
     height: 50vh;
   }
 
-  .App-icon {
+  .home-icon {
     width: 50%;
     font-size: 30vw;
     margin-top: 0px;
