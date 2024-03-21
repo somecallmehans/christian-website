@@ -1,8 +1,8 @@
 import React from "react";
 import { SPOTIFY, GITHUB, LINKEDIN, EMAIL } from "../constants";
 
-export const IconWithLink = ({ url, icon, type }) => (
-  <a href={url} className={`home-icon ${type}`}>
+export const IconWithLink = ({ url, icon, classes }) => (
+  <a href={url} className={`home-icon ${classes}`}>
     <i className={icon} />
   </a>
 );
@@ -40,22 +40,22 @@ export const IconSocials = ({ animate }) => (
     <IconWithLink
       url={LINKEDIN}
       icon="fa-brands fa-linkedin"
-      type={`linkedin ${animate}-5`}
+      classes={`linkedin ${animate}-5`}
     />
     <IconWithLink
       url={GITHUB}
       icon="fa-brands fa-square-github"
-      type={`github ${animate}-6`}
+      classes={`github ${animate}-6`}
     />
     <IconWithLink
       url={SPOTIFY}
       icon="fa-brands fa-spotify"
-      type={`spotify ${animate}-7`}
+      classes={`spotify ${animate}-7`}
     />
     <IconWithLink
       url={EMAIL}
       icon="fa-solid fa-square-envelope"
-      type={`email ${animate}-8`}
+      classes={`email ${animate}-8`}
     />
   </div>
 );
