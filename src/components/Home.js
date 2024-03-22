@@ -25,10 +25,17 @@ export default function Home() {
         My name is Christo <span>(He/Him)</span>
       </div>
       <div className={`home-text-content mt-3 ${animate}-2`}>
-        I'm a <Tooltip content={TOOLTIP_TEXT.DEV}>full stack developer</Tooltip>
-        , <Tooltip content={TOOLTIP_TEXT.MUSIC}>musician</Tooltip>, and{" "}
+        I'm a{" "}
+        <Tooltip content={TOOLTIP_TEXT.DEV}>
+          <span className="color-blue">full stack developer</span>
+        </Tooltip>
+        ,{" "}
+        <Tooltip content={TOOLTIP_TEXT.MUSIC}>
+          <span className="color-red">musician</span>
+        </Tooltip>
+        , and{" "}
         <Tooltip content={TOOLTIP_TEXT.OUTDOORS}>
-          general outdoorsy person
+          <span className="color-green">amateur outdoorsman</span>
         </Tooltip>
       </div>
       <div className={`home-text-content mt-3 ${animate}-3`}>

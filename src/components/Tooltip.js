@@ -22,7 +22,9 @@ export default function Tooltip({ content, children }) {
       onMouseLeave={hideTip}
     >
       {children}
-      {active && <div className="tooltip-container top">{content}</div>}
+      {active && (
+        <div className="tooltip-container tooltip-fade">{content}</div>
+      )}
     </div>
   );
 }

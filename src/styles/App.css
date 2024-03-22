@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+:root {
+  --main-blue: #0784ca;
+  --main-purple: #9d49be;
+  --main-green: #137724;
+  --main-red: #b41e02;
+}
+
+.color-blue {
+  color: var(--main-blue);
+}
+
+.color-green {
+  color: var(--main-green);
+}
+
+.color-red {
+  color: var(--main-red);
+}
 
 .App {
   height: 100vh;
@@ -32,19 +50,19 @@
 }
 
 .home-icon.linkedin:hover {
-  color: #0784ca;
+  color: var(--main-blue);
 }
 
 .home-icon.github:hover {
-  color: #9d49be;
+  color: var(--main-purple);
 }
 
 .home-icon.spotify:hover {
-  color: #137724;
+  color: var(--main-green);
 }
 
 .home-icon.email:hover {
-  color: #b41e02;
+  color: var(--main-red);
 }
 
 .icon-container {

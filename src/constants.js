@@ -7,7 +7,7 @@ export const EMAIL = "mailto:christianwillanderson@gmail.com";
 export const TOOLTIP_TEXT = {
   DEV: "I have experience with a variety of front and backend technologies, including but not limited to: React/React-Native, Next, Svelte, Django, and various relational/nosql databases (Postgres/MySQL/Mongo).",
   MUSIC:
-    "Currently I play bass guitar in the Tory Silver band, with whom I've toured throughout the East Coast and Rust Belt. I've also been playing guitar for around 15 years.",
+    "I play bass guitar in the Tory Silver band, with whom I've toured throughout the East Coast and Rust Belt over the last few years. I've also been playing guitar for around 15 years and occasionally perform in a jazz combo.",
   OUTDOORS:
-    "I love hiking and biking, and I've gotten to camp across the United States- my favorite campgrounds can be found in Acadia NP and Badlands NP.",
+    "I love hiking and biking, and have camped across the United States- my favorite campgrounds can be found in Acadia NP and Badlands NP.",
 };
