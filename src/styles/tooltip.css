@@ -15,8 +15,8 @@
   font-size: 2.5vw;
   line-height: 1;
   z-index: 100;
-  white-space: nowrap;
-  text-wrap: wrap;
+  white-space: normal;
+  overflow-wrap: break-word;
   width: 550px;
   filter: drop-shadow(4px 4px 6px #a9a9a9);
 }
