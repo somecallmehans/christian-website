@@ -6,9 +6,9 @@
 .tooltip-container {
   position: fixed;
   opacity: 0.8;
-  top: 30px;
+  top: 50px;
   border-radius: 8px;
-  right: 50px;
+  right: 30px;
   padding: 12px;
   color: white;
   background: black;
@@ -37,9 +37,18 @@
   }
 }
 
+@media screen and (max-width: 300px) {
+  .tooltip-container {
+    right: 10px;
+    width: 150px;
+    font-size: 2vw;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .tooltip-container {
-    width: 200px;
+    width: 250px;
+    font-size: 3vw;
   }
 }
 
