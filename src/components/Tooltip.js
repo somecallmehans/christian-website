@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "../styles/tooltip.css";
 
-export default function Tooltip({ content, children }) {
+export default function Tooltip({ content, hide, children }) {
   let timeout;
   const [active, setActive] = useState();
+
+  if (hide) return <React.Fragment>{children}</React.Fragment>;
 
   const showTip = () => {
     timeout = setTimeout(() => {
