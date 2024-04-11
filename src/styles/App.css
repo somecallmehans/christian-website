@@ -73,7 +73,7 @@
 
 .fade {
   opacity: 0;
-  animation: fadeIn 1s ease forwards;
+  animation: fadeInText 1s ease forwards;
 }
 
 .delay-1 {
@@ -109,7 +109,7 @@
   animation-delay: 3.25s;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInText {
   0% {
     opacity: 0;
     transform: translateX(-30px);
