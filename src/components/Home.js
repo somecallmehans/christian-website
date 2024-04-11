@@ -1,22 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { IconCredit, IconSocials } from "./Icons";
 import Tooltip from "./Tooltip";
 import { TOOLTIP_TEXT } from "../constants";
-
-const getEverVisited = () => localStorage.getItem("everVisited") === null;
+import { useFadeDelay } from "../hooks";
 
 export default function Home() {
-  let animate = "";
-
-  useEffect(() => {
-    if (getEverVisited()) {
-      localStorage.setItem("everVisited", true);
-    }
-  }, []);
-
-  if (getEverVisited()) {
-    animate = "fade delay";
-  }
+  const { animate } = useFadeDelay();
 
   return (
     <div className="p-3">
